@@ -53,6 +53,3 @@ def rewrite_data():
     with open("data.json", "w", encoding="utf-8") as file:
         json.dump(res, file, indent=2, ensure_ascii=False)
 
-
-for item in get_data():
-    print(item["requirements"] + "\n")
